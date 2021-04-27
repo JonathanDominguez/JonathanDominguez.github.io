@@ -1,0 +1,238 @@
+/* Image */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 100px;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+.backgroundImage{
+  background-image: url("../images/mainPage.jpeg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* center div */
+.centerPage {
+  position: relative;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* Header & Nav Bar */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+.head{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    font-size: 30px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  padding-right: 50px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #4c9c9b;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Center name */
+.box-in-middle{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8%;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+#my-name{
+  text-align: center;
+  font-size: 100px;
+}
+
+.names-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  padding: 10px;
+}
+
+.names-container> div {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Resume part */
+  /* Carrer */
+.experiences-box{
+  /* background-color: red; */
+  margin: auto;
+  max-width: 70%;
+}
+
+.experiences-title{
+  text-align: center;
+  font-size: 50px;
+  color: #4c9c9b;
+}
+
+hr{
+  color: blue;
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.resume-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid black; */
+  text-align: left;
+  font-size: 30px;
+  padding-top: 0px;
+}
+
+#date-text{
+  font-size: 20px;
+}
+.resume-list {
+  list-style-type: circle;
+  float: left;
+}
+
+/* ==== Go down button ==== */
+.go-down{
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  background-color: #222222;
+  text-align: center;
+  z-index: 6;
+}
+
+/* relevant-coursework */
+.relevant-coursework{
+ font-size: 30px;
+ text-align: center;
+}
+/* skills-container */
+.skills-background{
+  background-color: black;
+}
+.skills-box{
+  margin: auto;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.skills-item {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.skills-item-right{
+  /* background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: right; 
+}
+
+.checked {
+  color: #4c9c9b;
+}
+
+.white{
+  color:white;
+}
+
+/* Footer */
+/* .footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#4c9c9b;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+} */
