@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <title>Jonathan</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./styles/index.css">
 <body>
@@ -9,6 +10,12 @@
   <!-- background image -->
 <div class="backgroundImage">
 
+</div>
+
+<div class = "center-box-text">
+  <p>Hello, my name is <span class = "name-highlight">Jonathan Dominguez.</span></p>
+  <p>I'm a full-stack web developer and junior software engineer.</p>
+  <button onclick = "moveDown()"class = "view-me-button">View about me</button>
 </div>
 
   <!-- Nav bad  -->
@@ -24,60 +31,39 @@
     </div>
 </header>
 
+<!-- About me -->
+<div class = "about-me-section">
+  <!-- Title about -->
+  <div id = "about-me-title-box">
+    <p id = "about-me-title">About Me</p>
+    <hr id = "hr-about-me">
+  </div>
+  <!-- Text info about -->
+  <div class="about-me-container">
+    <div class="about-me-item">
+      <p>Hello! My name is Jonathan; I'm from south Los Angeles. I first began my coding journey back in 2013 before entering my freshman year of High School, when I took a summer boot camp on tech startups. That year I learned how to create my own website using HTML, CSS, and JavaScript; however, my role that summer was as a UI/UX designer. It was not until the summer after my sophomore year of high school did I take up the Swift coding language. Throughout that summer, I created an iOS app with little functionality as it was my first time taking up an object-oriented language. Since those summers, I have not looked back. 
+      </p>
+    </div>
+    <div class="about-me-item">
+      <!-- <div class = "image-of-me" > -->
+        <img class = "image-of-me" src="./images/aboutMe.jpeg">
+      <!-- </div> -->
+    </div>
+  </div>
 
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
-<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
-
-
-<!--  Nav bar for page-->
-<div class = "nav-box">
-  <div class="navbar-container">
-    <button class = "buttonNav" onclick="move1000()">
-      <div class="navbar-item">Top</div>
-    </button>
-    <button class = "buttonNav" onclick="move2000()">
-      <div class="navbar-item">Carrer</div>
-    </button>
-    <button class = "buttonNav" onclick="move3000()">
-      <div class="navbar-item">Skills</div>
-    </button> 
+  <div class="about-me-container">
+    <div class="about-me-item">
+      <p>Hello! My name is Jonathan; I'm from south Los Angeles. I first began my coding journey back in 2013 before entering my freshman year of High School, when I took a summer boot camp on tech startups. That year I learned how to create my own website using HTML, CSS, and JavaScript; however, my role that summer was as a UI/UX designer. It was not until the summer after my sophomore year of high school did I take up the Swift coding language. Throughout that summer, I created an iOS app with little functionality as it was my first time taking up an object-oriented language. Since those summers, I have not looked back. 
+      </p>
+    </div>
+    <div class="about-me-item">
+      <!-- <div class = "image-of-me" > -->
+        <img class = "image-of-me" src="./images/aboutMe.jpeg">
+      <!-- </div> -->
+    </div>
   </div>
 </div>
 
-
-<script src="./scripts/resume.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 </html>

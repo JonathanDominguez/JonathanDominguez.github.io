@@ -10,23 +10,30 @@
 
   <!-- background image -->
 <div class="backgroundImage">
-    <button onclick="move1000()">
-        <div class = "go-down">
-        </div>
-        <!-- Nav bad  -->
-        <header class = "head">
-            <div class="container">
-            <nav>
-                <ul>
-                <li><a href="./index.html">About</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
-    </button>
+    <button class = "go-down" onclick="move1000()"></button>
 </div>
+
+
+  <!-- Nav bar  -->
+  <header class = "head">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="./index.html">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<!-- Vertical Nav Bar -->
+<div class="sticky btn-group">
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+    <button class="button">Button</button>
+  </div>
 
 <!-- Name in middle -->
 <div class = "box-in-middle">
@@ -40,48 +47,28 @@
     </div>
 </div>
 
-<!--  Nav bar for page-->
-<!-- <div class = "cll">
-    <div class="navbar-container">
-      <button class = "buttonNav" onclick="move1000()">
-        <div class="navbar-item">Education</div>
-      </button>
-      <button class = "buttonNav" onclick="move2000()">
-        <div class="navbar-item">Experience</div>
-      </button>
-      <button class = "buttonNav" onclick="move3000()">
-        <div class="navbar-item">Honors</div>
-      </button> 
-      <button class = "buttonNav" onclick="move4000()">
-        <div class="navbar-item">Coursework</div>
-      </button> 
-      <button class = "buttonNav" onclick="move5000()">
-        <div class="navbar-item">Skills</div>
-      </button> 
-    </div>
-</div> -->
-
 <!-- Carrer -->
 <div class = "experiences-box">
-    <!-- Education -->
-    <div class = "experiences-title">
-        <p>Education</p>
-    </div>
-    <hr>
-    <div class="resume-container">
-        <div>University of California Santa Cruz</div>
-        <div>B.S. Cognitive Ccience</div>
-        <div id = "date-text">September 2017 - Present</div>   
+    <div class = "education-box">
+                <!-- Education -->
         <div>
-            <ul class="resume-list">
-                <li>Concentration Artificial Intelligence and Human-Computer Interaction</li>
-              </ul>
-        </div>  
+            <p class = "experiences-title">Education</p>
+        </div>
+        <hr>
+        <div class="eductation-container">
+            <div>University of California Santa Cruz B.S. Cognitive Science</div>
+            <div id = "date-text">September 2017 - Present</div>   
+            <div>
+                <ul class="resume-list">
+                    <li>Concentration Artificial Intelligence and Human-Computer Interaction</li>
+                </ul>
+            </div>  
+        </div>
     </div>
 
     <!-- Education -->
     <div class = "experiences-title">
-        <p>Experience</p>
+        <p class = "experiences-title">Experience</p>
     </div>
     <hr>
     <div class="resume-container">
@@ -130,42 +117,50 @@
         <p>Honors</p>
     </div>
     <hr>
-    <div class="resume-container">
-        <div>Recipient of Kayne Scholarship</div>
-        <div>Selected as one of fifty first-generation college students for being interested in the field of STEM</div>
-        <div id = "date-text">2017–Present</div>   
-        <div>
-            <ul class="resume-list">
-                <!-- <li></li> -->
-            </ul>
-        </div>  
+<!-- Slide show -->
+
+<div class="slideshow-container">
+    <div class="mySlides">
+        <div class="honor-container">
+            <div class = "honor-name">Recipient of Kayne Scholarship</div>
+            <div class = "honor-info-text">Selected as one of fifty first-generation college students for being interested in the field of STEM</div>
+            <img class = "image-slide-one" src="./images/ScholarMatch.png">
+        </div>
     </div>
-    <div class="resume-container">
-        <div>Certification of Recognition by the City of Los Angeles</div>
-        <div>Given certificate by the City of Los Angeles and 9th district for teaching and leading a coding program of 45 high school students in South Los Angeles to be the next generation of technology entrepreneurs.</div>
-        <div id = "date-text">2016</div>   
-        <div>
-            <ul class="resume-list">
-                <!-- <li></li> -->
-            </ul>
-        </div>  
+    
+    <div class="mySlides">
+        <div class="honor-container">
+            <div class = "honor-name">Certification of Recognition by the City of Los Angeles</div>
+            <div class = "honor-info-text">Given certificate by the City of Los Angeles and 9th district for teaching and leading a coding program of 45 high school students in South Los Angeles to be the next generation of technology entrepreneurs.</div>   
+            <img class = "image-slide-two" src="./images/Seal_of_Los_Angeles.png">
+        </div>
     </div>
-    <div class="resume-container">
-        <div>Dean’s Honor</div>
-        <div>Quarter GPA above 3.740</div>
-        <div id = "date-text">Fall 2020</div>   
-        <div>
-            <ul class="resume-list">
-                <!-- <li></li> -->
-            </ul>
-        </div>  
+    
+    <div class="mySlides">
+      <div class="honor-container">
+        <div class = "honor-name" >Dean’s Honor</div>
+        <div class = "honor-info-text">Fall 2020</div>  
+        <img class = "image-slide-three" src="./images/UCSC-Logo.png"> 
     </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+</div>
+
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
 <!-- Relevant Course Work -->
     <div class = "experiences-title">
         <p>Relevant Coursework</p>
     </div>
     <hr>
-    <div class="resume-container">
+    <div class="relevant-coursework-container">
         <p class = "relevant-coursework">Artificial Intelligence and Music</p>
         <p class = "relevant-coursework">Foundations of Interactive Game Design</p>
         <p class = "relevant-coursework">Applied Discrete Mathematics</p>
@@ -333,12 +328,10 @@
 </div>
 
 <!-- Foooter -->
-<!-- <div class="footer">
-    <p>Footer</p>
-</div> -->
+<footer class = "foot-box">
+    <p></p>
+</footer>
   
-
-
 <script src="./scripts/resume.js"></script>
 </body>
 </html>

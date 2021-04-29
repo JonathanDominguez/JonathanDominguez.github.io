@@ -1,4 +1,4 @@
-/* Image */
+/* ==== Image ==== */
 body, html {
   height: 100%;
   margin: 0;
@@ -14,10 +14,12 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(50%);
 }
 
-/* center div */
-.centerPage {
+/* ==== center div ==== */
+/* CAN USE THISE !! */
+/* .centerPage {
   position: relative;
   position: absolute;
   top: 40%;
@@ -25,9 +27,9 @@ body, html {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-}
+} */
 
-/* Header & Nav Bar */
+/* ==== Header & Nav Bar ==== */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 .head{
     position: absolute;
@@ -94,7 +96,7 @@ nav a:hover::before {
   width: 100%;
 }
 
-/* Center name */
+/* ==== Center name ==== */
 .box-in-middle{
   position: absolute;
   top: 0;
@@ -121,37 +123,44 @@ nav a:hover::before {
   font-size: 30px;
 }
 
-/* Resume part */
+/* === Resume part === */
   /* Carrer */
 .experiences-box{
-  /* background-color: red; */
   margin: auto;
   max-width: 70%;
 }
 
 .experiences-title{
+  margin-top: 10px;
   text-align: center;
   font-size: 50px;
   color: #4c9c9b;
 }
 
+.eductation-container{
+  font-size: 30px;
+  color:#000000;
+  margin-bottom: 10px;
+}
+
+.education-box{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 hr{
   color: blue;
 }
 
 .resume-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
   grid-gap: 10px;
-  /* background-color: #2196F3; */
   padding: 10px;
   color: #000000;
   margin-bottom: 20px;
 }
 
 .resume-container > div {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid black; */
   text-align: left;
   font-size: 30px;
   padding-top: 0px;
@@ -159,11 +168,137 @@ hr{
 
 #date-text{
   font-size: 20px;
+  padding-top: 20px;
 }
 .resume-list {
   list-style-type: circle;
   float: left;
+  font-size: 20px;
 }
+/* === Honor section ===*/
+
+.honor-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  padding: 10px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.honor-container > div {
+  text-align: center;
+  padding-top: 0px;
+}
+.honor-name{
+  font-size: 35px;
+  text-decoration: underline;
+}
+.honor-info-text{
+  font-size: 25px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.image-slide-one{
+  margin: auto;
+  height: auto;
+  max-width: 40%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.image-slide-two{
+  margin: auto;
+  height: auto;
+  max-width: 10%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.image-slide-three{
+  margin: auto;
+  height: auto;
+  max-width: 30%;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+    /* ============================ */
+    /* ==== Slideshow container ====*/
+    /* ============================ */
+
+* {box-sizing: border-box}
+
+.slideshow-container {
+  margin: auto;
+  position: relative;
+  background: #4c9c9b;
+  max-height: 600px;
+  max-width: 90%;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    /* background: #ddd; */
+    max-height: 100px;
+    padding-top: 0px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
 
 /* ==== Go down button ==== */
 .go-down{
@@ -173,17 +308,23 @@ hr{
   position: absolute;
   bottom: 0px;
   right: 5%;
-  background-color: #222222;
+  background-color: #ffffff;
   text-align: center;
   z-index: 6;
+  border: none;
 }
 
-/* relevant-coursework */
+
+/* === relevant-coursework === */
 .relevant-coursework{
  font-size: 30px;
  text-align: center;
 }
-/* skills-container */
+
+.relevant-coursework-container{
+  color: #000000;
+}
+/* === skills-container === */
 .skills-background{
   background-color: black;
 }
@@ -225,14 +366,51 @@ hr{
   color:white;
 }
 
+/* === Vertical Nav Bar === */
+.sticky {
+  position: fixed;
+  position:sticky;
+  top: 0;
+  background-color: yellow;
+  font-size: 20px;
+  width: 110px;
+  float:right;
+  right: 5%;
+  top: 0px;
+  /* position: absolute; */
+}
+
+.btn-group .button {
+  background-color: #222222; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+  width:100%;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #4c9c9b;
+}
+
 /* Footer */
-/* .footer {
+.foot-box {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 200px;
   background-color:#4c9c9b;
   color: white;
   text-align: center;
   padding-top: 40px;
-} */
+}
