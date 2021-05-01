@@ -402,6 +402,22 @@ hr{
   background-color: #4c9c9b;
 }
 
+/* container box */
+.certificates-container{
+  background-color: red;
+  padding: 0;
+}
+
+.certificates-container-title{
+  margin: auto;
+  width: 70%;
+}
+
+#certificates-title{
+  color: #4c9c9b;
+  text-align: center;
+  font-size: 50px;
+}
 /* Footer */
 .foot-box {
   position: relative;

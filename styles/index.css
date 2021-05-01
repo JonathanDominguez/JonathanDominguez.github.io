@@ -1,4 +1,4 @@
-/* Image */
+/* === Body and html === */
 body, html {
   height: 100%;
   margin: 0;
@@ -8,42 +8,7 @@ body, html {
   background-color: #0a192f;
 }
 
-.backgroundImage{
-  background-image: url("../images/mainPage.jpeg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(50%);
-}
-
-/* Center box */
-.view-me-button{
-  border-style: solid;
-  border-color: white;
-  background-color: transparent;
-  padding: 5px 40px;
-}
-
-.view-me-button:hover {
-  color: #ffffff;
-  background-color: #5DFFD6;
-  border-color: #5DFFD6;
-  padding: 5px 40px;
-}
-
-/* center div */
-.centerPage {
-  position: relative;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-/* Header & Nav Bar */
+/* === Header & Nav Bar === */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 .head{
     position: absolute;
@@ -51,18 +16,19 @@ body, html {
     width: 100%;
     height: 8%;
     font-size: 30px;
-}
-
-.container {
-	width: 100%;
-	margin: 0 auto;
-
+    z-index: 2;
 }
 
 header::after {
   content: '';
   display: table;
   clear: both;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+
 }
 
 nav {
@@ -112,53 +78,18 @@ nav a:hover::before {
   width: 100%;
 }
 
-.nav-box{
-  position:fixed;
-  width:10%;
-  right:20px;
-  top:500px;
+/* === Background image === */
+
+.backgroundImage{
+  background-image: url("../images/mainPage.jpeg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: 1;
 }
 
-.navbar-container {
-  display: grid;
-  grid-template-columns: auto;
-  padding: 10px;
-  height: 300px;
-}
-.navbar-item {
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-}
-.buttonNav{
-  background-color: black;
-  color: white;
-}
-/* f */
-.about-me{
-  color: #000;
-  padding-top: 0px;
-  font-size: 30px;
-  background-color: blueviolet;
-}
-
-.background-history{
-  background-color: #4c9c9b;
-  color:white;
-  padding-top: 0px;
-  font-size: 30px;
-}
-
-/* Section title  */
-.section-title{
-  color: #4c9c9b;
-  text-align: center;
-
-  margin: auto;
-  width: 50%;
-}
 /* ==== Div in image ==== */
 .center-box-text{
   position: absolute;
@@ -170,6 +101,7 @@ nav a:hover::before {
   margin-top: 20%;
   text-align: center;
   display:inline;  
+  z-index: 2;
 }
 
 .name-highlight{
@@ -177,16 +109,45 @@ nav a:hover::before {
   color: #5DFFD6;
 }
 
+.view-me-button{
+  border-style: solid;
+  border-color: white;
+  background-color: transparent;
+  padding: 5px 40px;
+}
+
+.view-me-button:hover {
+  color: #ffffff;
+  background-color: #5DFFD6;
+  border-color: #5DFFD6;
+  padding: 5px 40px;
+}
+
+/* === about me section === */
+.about-me{
+  color: #000;
+  padding-top: 0px;
+  font-size: 30px;
+  /* background-color: blueviolet; */
+}
+
+.background-history{
+  background-color: #4c9c9b;
+  color:white;
+  padding-top: 0px;
+  font-size: 30px;
+}
+
 /* ==== About me section ==== */
 .about-me-section{
   margin: auto;
   width: 50%;
-  /* border-color: white; */
-  /* border-style: solid; */
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
   color: #5DFFD6;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 #about-me-title-box{
@@ -194,8 +155,6 @@ nav a:hover::before {
   margin-bottom: 10px;
   color: #CDD6F3;
   max-height: 100px;
-
-  /* background-color: red; */
 }
 
 #hr-about-me{
@@ -207,7 +166,8 @@ nav a:hover::before {
   font-size: 40px;
   padding:10px;
 }
-    /* Grid */
+
+/* === About me grid === */
 .about-me-container {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -229,14 +189,88 @@ nav a:hover::before {
   max-width: 100%;
 }
 
-    /* Grid responsive */
+/* TIME LINE */
+.timeline-container{
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.timeline-title-container{
+  margin: auto;
+  width: 70%;
+  padding-bottom: 50px;
+}
+
+#timeline-title{
+  text-align: center;
+  font-size: 50px;
+  color: #CDD6F3;
+}
+    /* Scolling */
+.timeline-scroll-box{
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+  /* grid-template-rows: 60% 40%; */
+  grid-gap: 10px;
+  background-color: #0a192f;
+  padding: 10px;
+  /* adjusts height based on  .timeline-scroll height*/
+  height: 100%;
+  color: #000;
+  font-size: 10px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+}
+
+.timeline-photos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.timeline-date{
+  font-size: 15px;
+  color: white;
+  padding-left: 10px;
+}
+
+.timeline-item{
+  color:#8992AD;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+/* === Footer === */
+.foot-box {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color:#4c9c9b;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* === Grid responsive === */
 @media only screen 
     and (max-width: 768px){
   .about-me-section{
     margin: auto;
     width: 100%;
-    /* border-color: white; */
-    /* border-style: solid; */
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
