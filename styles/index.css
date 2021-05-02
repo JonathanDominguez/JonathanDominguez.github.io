@@ -191,6 +191,7 @@ nav a:hover::before {
 
 /* TIME LINE */
 .timeline-container{
+  background-color: #ffffff;
   margin-top: 100px;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -199,13 +200,13 @@ nav a:hover::before {
 .timeline-title-container{
   margin: auto;
   width: 70%;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 #timeline-title{
   text-align: center;
   font-size: 50px;
-  color: #CDD6F3;
+  color: #4c9c9b;
 }
     /* Scolling */
 .timeline-scroll-box{
@@ -217,10 +218,9 @@ nav a:hover::before {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50% 50% 50%;
-  /* grid-template-rows: 60% 40%; */
+  grid-template-columns: 40% 40% 40% 40%;
   grid-gap: 10px;
-  background-color: #0a192f;
+  background-color: #ffffff;
   padding: 10px;
   /* adjusts height based on  .timeline-scroll height*/
   height: 100%;
@@ -236,17 +236,17 @@ nav a:hover::before {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 60%;
 }
 
 .timeline-date{
   font-size: 15px;
-  color: white;
+  color: 4c9c9b;
   padding-left: 10px;
 }
 
 .timeline-item{
-  color:#8992AD;
+  color:#4c9c9b;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 20px;
@@ -259,11 +259,38 @@ nav a:hover::before {
   bottom: 0;
   width: 100%;
   height: 200px;
-  background-color:#4c9c9b;
+  background-color:#0a192f;
   color: white;
   text-align: center;
   padding-top: 40px;
 }
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.footer-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.logo-button{
+  border-style: solid;
+  border-style: white;
+  height: 80px;
+  width: 80px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
 
 /* === Grid responsive === */
 @media only screen 
