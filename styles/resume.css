@@ -17,17 +17,23 @@ body, html {
   filter: brightness(50%);
 }
 
-/* ==== center div ==== */
-/* CAN USE THISE !! */
-/* .centerPage {
-  position: relative;
+/* ==== Div in image ==== */
+.center-box-text{
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
   width: 100%;
+  height: 25%;
+  font-size: 30px;
+  /* background-color: red; */
+  margin-top: 10%;
   text-align: center;
-} */
+  display:inline;  
+  z-index: 2;
+}
+
+#my-name{
+  font-size: 50px
+}
 
 /* ==== Header & Nav Bar ==== */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
@@ -418,15 +424,43 @@ hr{
   text-align: center;
   font-size: 50px;
 }
-/* Footer */
+
+
+/* === Footer === */
 .foot-box {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 200px;
-  background-color:#4c9c9b;
+  background-color:#0a192f;
   color: white;
   text-align: center;
   padding-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.footer-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.logo-button{
+  border-style: solid;
+  border-style: white;
+  height: 80px;
+  width: 80px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
 }
