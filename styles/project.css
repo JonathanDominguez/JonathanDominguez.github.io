@@ -19,6 +19,11 @@ body, html {
     z-index: 2;
     background-color: #0a192f;
 }
+/* 
+.test-me{
+    border-top: 1px solid red;
+    z-index: 1;
+} */
 
 header::after {
   content: '';
@@ -101,88 +106,112 @@ nav a:hover::before {
     padding-top: 1px;
     /* margin-bottom: 900px; */
 }
+ 
+/* ================================ */
+/* html {
+  background: #f5f7f8;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+} */
 
-.hr-line{
-    border-top: 1px solid yellow;
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
 }
 
-.project-image{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-top: -20px;
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .item-1 {
+  grid-column: 1/ span 2;
+  }
+  .item-1 h1 {
+    font-size: 30px;
+  }
 }
 
-.top-half{
-    float: left;
-    margin-bottom: 10px;
-    /* background-color: green; */
-    width: 100%;
-    margin-bottom: 2px;
-    color: black;
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
-.project-name{
-    float: left;
-    padding-left: 20px;
-    padding-bottom: 1px;
-    font-size: 20px;
-    font-weight: 500;
+/* card */
+
+.card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
 }
 
-.project-description{
-    float: left;
-    padding-left: 20px;
-    font-size: 20px;  
-    /* background-color:purple; */
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 
-.description-half{
-    margin-bottom: 2px;
-    color: black;
-    font-size: 20px;
+.card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
 }
 
-.line{
-    background-color:black;
-    width: 100%;
-    /* padding-bottom: 2px; */
+.card p { 
+  flex: 1; /* make p grow to fill available space*/
+  line-height: 1.4;
 }
 
-.lower-half{
-    /* padding-top: 20px; */
-    /* background-color: blue; */
-    width: 100%;
-    height: 100px;
-    color: black;
-    font-size: 20px;  
+/* typography */
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
 }
 
-.project-date{
-    float: left;
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
 }
 
-.project-language{
-    float: right;
-}
+/* ================================ */
 
 /* project list */
 .portfolio-container-box{
     margin: auto;
     width: 90%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.portfolio-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 500px 500px;
-    grid-gap: 20px;
-    row-gap: 50px;
-    /* background-color: #2196F3; */
-    padding: 10px;
-  }
+
   
 .portfolio-container > div {
     /* background-color: red; */
@@ -192,9 +221,10 @@ nav a:hover::before {
   }
 
 .card-port{
-    padding: 10px;
-    box-shadow: 10px 10px 5px grey;
+    /* padding: 10px;
+    box-shadow: 10px 10px 5px grey; */
     height: 100%;
+    /* background-color: red; */
 }
 
 
