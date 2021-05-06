@@ -1,6 +1,7 @@
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 function moveDown(){
     window.scroll({
-        top: 1000,
+        top: vh,
         behavior: 'smooth'
-      });
+    });
 }
