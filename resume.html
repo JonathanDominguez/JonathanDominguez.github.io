@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Jonathan</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./styles/resume.css">
-<!-- Star link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Jonathan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/resume.css">
+    <!-- Star link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
 
+<!-- Navigation bar   -->
+<div class="topnav" id="myTopnav">
+    <a href="./index.html">ABOUT</a>
+    <a href="./project.html">PROJECTS</a>
+    <a href="./resume.html">RESUME</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+  
   <!-- background image -->
 <div class="backgroundImage">
-    <button class = "go-down" onclick="move1000()"></button>
-</div>
-
-
-  <!-- Nav bar  -->
-  <header class = "head">
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="./index.html">About</a></li>
-          <li><a href="./project.html">Project</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-        </ul>
-      </nav>
-    </div>
-</header>
+</div>  
 
 <!-- Vertical Nav Bar -->
-<div class="sticky btn-group">
-    <button class="button">Button</button>
-    <button class="button">Button</button>
-    <button class="button">Button</button>
-    <button class="button">Button</button>
-  </div>
+    <!-- <div class="sticky btn-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+    </div> -->
 
 <!-- Name in middle -->
 <div class = "center-box-text">
     <p id = "my-name">Jonathan Dominguez</p>
-    <p>Web developer · Junior software engineer · Machine Learning</p>
+    <p id = "text-info">Web developer · Junior software engineer · Machine Learning</p>
 </div>
   
 
-<!-- Carrer -->
+<!-- Career -->
 <div class = "experiences-box">
     <div class = "education-box">
-                <!-- Education -->
+<!-- Education -->
         <div>
             <p class = "experiences-title">Education</p>
         </div>
@@ -61,14 +58,19 @@
         </div>
     </div>
 
-    <!-- Education -->
+<!-- Experience -->
     <div class = "experiences-title">
         <p class = "experiences-title">Experience</p>
     </div>
     <hr>
     <div class="resume-container">
-        <div>Teens Exploring Technology</div>
-        <div>Tech Lead • Los Angeles, CA</div>
+        <div>
+            <div class = "company-title">Teens Exploring Technology</div>
+        </div>
+        <div>
+            <div class = "position-title">Tech Lead • Los Angeles, CA</div>
+
+        </div>
         <div id = "date-text">June 2020 – August 2020</div>   
         <div>
             <ul class="resume-list">
@@ -259,13 +261,12 @@
 </div>
 
 <!-- Certificates -->
-<div class = "certificates-container">
+<!-- <div class = "certificates-container">
     <div class = "certificates-container-title">
         <p id = "certificates-title">Certificates</p>
         <hr>
     </div>
-
-</div>
+</div> -->
 
 <!-- Foooter -->
 <footer class = "foot-box">
