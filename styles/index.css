@@ -69,6 +69,14 @@
     display: block;
     text-align: left;
   }
+
+  .topnav{
+    height: auto;
+  }
+
+  .topnav a:hover::before {
+    width: none;
+  }
 }
 
 /* === Body and html === */
@@ -326,7 +334,6 @@ body, html {
   .center-box-text{
     font-size: 20px;
     margin: auto;
-    /* width: 50%; */
     margin-top: 300px;
   }
 
@@ -335,6 +342,7 @@ body, html {
     width: 100%;
     text-align: center;
     color: #5DFFD6;
+    padding-top: 55px;
   }
 
   /*  About me  */
@@ -362,7 +370,7 @@ body, html {
   
   /*  Time line */
   .grid-container {
-    grid-template-columns: 70% 70% 70% 70%;
+    grid-template-columns: 100% 100% 100% 100%;
   }
 
   /* Footer */
