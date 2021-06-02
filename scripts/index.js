@@ -1,16 +1,17 @@
-const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+	
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+// const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+let height = screen.height+150;
 function moveDown(){
     window.scroll({
-        top: vh,
+        top: height,
         behavior: 'smooth'
     });
 }
 
-function myFunction() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-	  x.className += " responsive";
-	} else {
-	  x.className = "topnav";
-	}
-  }

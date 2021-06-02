@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="./styles/blog.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
     <title>Jonathan</title>
 </head>
 	<body>
-        <!-- Nav bar -->
+<!-- Nav bar -->
         <div id="menu-bar">
             <div id="menu" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
@@ -24,85 +24,52 @@
                 <li><a href="./resume.html">Resume</a></li>
             </ul>
         </div>
-        <div class="menu-bg" id="menu-bg"></div>
-        <!-- Center info -->
-        <section class="content">
-            <h1 class="sub-title"> Hello, my name is <strong id = "name-strong">Jonathan Dominguez.</strong> <br /> I'm a full-stack web developer and junior software engineer.</h1>
-            <!-- <button type="button" class="btn btn-outline-light" onclick="moveDown()">Start my journey</button> -->
-        </section>
-        <!-- About me section -->
-        <div class = "about-me">
-            <div class = "about-me-section">
-                <!-- Title about -->
-                <div id = "about-me-title-box">
-                <p id = "about-me-title">About Me</p>
-                <hr id = "hr-about-me">
+<!-- Content -->
+
+<div class="blog-container">
+        <!-- Blog #1 -->
+        <div class="card">
+            <p class = "title-name">TITLE HEADING</p>
+            <div class="img-blog" style="height:200px;">Image</div>
+            <p class = "blog-date">June 2, 2021</p>
+            <p class = "blog-description">Some text..</p>
+            <div class="bottom-container">
+                <div class="bottom-item">
+                    <button class = "read-more">Read More</button>
                 </div>
-                <!-- Text info about -->
-                <div class="about-me-container">
-                <div class="about-me-item">
-                    <p>Hello! My name is Jonathan; I'm from south Los Angeles. I first began my coding journey back in 2013 before entering my freshman year of High School, when I took a summer boot camp on tech startups. That year I learned how to create my own website using HTML, CSS, and JavaScript; however, my role that summer was as a UI/UX designer. It was not until the summer after my sophomore year of high school did I take up the Swift coding language. Throughout that summer, I created an iOS app with little functionality as it was my first time taking up an object-oriented language. Since those summers, I have not looked back. 
-                    </p>
-                </div>
-                <div class="about-me-item">
-                    <!-- <div class = "image-of-me" > -->
-                    <img class = "image-of-me" src="./images/aboutMe.jpeg">
-                    <!-- </div> -->
-                </div>
-                </div>
-            </div>
-        <!-- Timeline -->
-        <div class = "timeline-container">
-            <div class = "timeline-title-container">
-            <p id = "timeline-title">Timeline</p>
-            <hr>
-            </div>
-            <!-- timeline scrolling x -->
-            <div class = "timeline-scroll-box">
-            <div class="grid-container">
-                <div class="timeline-item-image">
-                    <div>
-                    <img class = "timeline-photos" src="./images/year2.png">
-                    </div>        
-                </div>
-                <div class="timeline-item-image">
-                    <div>
-                    <img class = "timeline-photos" src="./images/year2.png">
+                <div class="bottom-item">
+                    <div class = "tags-container">
+                        <p class = "tags">Python</p>
+                        <p class = "tags">JavaScript</p>
+                        <p  class = "tags">Node.js</p>
                     </div>
-                </div>
-                <div class="timeline-item-image">
-                    <div>
-                    <img class = "timeline-photos" src="./images/year3.png">
-                    </div>  
-                </div>  
-                <div class="timeline-item-image">
-                    <div>
-                    <img class = "timeline-photos" src="./images/year2.png">
-                    </div>  
-                </div>
-                <div>
-                    <hr>
-                    <p class = "timeline-date">2013</p>
-                    <p class="timeline-item">This was the year I was introduced to  </p> 
-                </div>
-                <div>
-                    <hr>
-                    <p class = "timeline-date">2015</p>
-                    <p class="timeline-item">In the summer of 2015 I </p> 
-                </div>
-                <div>
-                    <hr>
-                    <p class = "timeline-date">2016</p>
-                    <p class="timeline-item">This was the year I was an instructor to over 20 middle and high school students. I created and taught lessons on HTML, CSS, JavaScript, as well as Jquery and PhotoShop.</p> 
-                </div>
-                <div>
-                    <hr>
-                    <p class = "timeline-date">2018</p>
-                    <p class="timeline-item">This was the year I began my jounryhis was the year I began my jounry his was the year I began my jounry his was the yhis was the year I began my jounry his was the year I began my jounry his was the year I began my jounry his was the year I began my jounry ear I began my jounry  of coding</p> 
-                </div>
-            </div>
+                </div> 
             </div>
         </div>
+        <!-- Blog # -->
+        <div class="card">
+            <p class = "title-name">TITLE HEADING</p>
+            <div class="img-blog" style="height:200px;">Image</div>
+            <p class = "blog-date">June 2, 2021</p>
+            <p class = "blog-description">Some text..</p>
+        </div>
+        <!-- Blog #3 -->
+        <div class="card">
+            <p class = "title-name">TITLE HEADING</p>
+            <div class="img-blog" style="height:200px;">Image</div>
+            <p class = "blog-date">June 2, 2021</p>
+            <p class = "blog-description">Some text..</p>
+        </div>
+        <!-- Blog #4 -->
+        <div class="card">
+            <p class = "title-name">TITLE HEADING</p>
+            <div class="img-blog" style="height:200px;">Image</div>
+            <p class = "blog-date">June 2, 2021</p>
+            <p class = "blog-description">Some text..</p>
+        </div>
+</div>
+
+<!-- Footer -->
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
@@ -138,6 +105,6 @@
             <!-- Copyright -->
         </footer>
         <!-- Scripts -->
-		<script src="./scripts/index.js"></script>
+		<script src="./scripts/blog.js"></script>
 	</body>
 </html>

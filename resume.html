@@ -2,296 +2,307 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jonathan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/resume.css">
-    <!-- Star link -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/resume.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jonathan</title>
 </head>
-<body>
-
-<!-- Navigation bar   -->
-<div class="topnav" id="myTopnav">
-    <a href="./index.html">ABOUT</a>
-    <a href="./project.html">PROJECTS</a>
-    <a href="./resume.html">RESUME</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-</div>
-  
-  <!-- background image -->
-<div class="backgroundImage">
-</div>  
-
-<!-- Vertical Nav Bar -->
-    <!-- <div class="sticky btn-group">
-        <button class="button">Button</button>
-        <button class="button">Button</button>
-        <button class="button">Button</button>
-        <button class="button">Button</button>
-    </div> -->
-
-<!-- Name in middle -->
-<div class = "center-box-text">
-    <p id = "my-name">Jonathan Dominguez</p>
-    <p id = "text-info">Web developer · Junior software engineer · Machine Learning</p>
-</div>
-  
-
-<!-- Career -->
-<div class = "experiences-box">
-    <div class = "education-box">
-<!-- Education -->
-        <div>
-            <p class = "experiences-title">Education</p>
-        </div>
-        <hr>
-        <div class="eductation-container">
-            <div>University of California Santa Cruz B.S. Cognitive Science</div>
-            <div id = "date-text">September 2017 - Present</div>   
-            <div>
-                <ul class="resume-list">
-                    <li>Concentration Artificial Intelligence and Human-Computer Interaction</li>
-                </ul>
-            </div>  
-        </div>
-    </div>
-
-<!-- Experience -->
-    <div class = "experiences-title">
-        <p class = "experiences-title">Experience</p>
-    </div>
-    <hr>
-    <div class="resume-container">
-        <div>
-            <div class = "company-title">Teens Exploring Technology</div>
-        </div>
-        <div>
-            <div class = "position-title">Tech Lead • Los Angeles, CA</div>
-
-        </div>
-        <div id = "date-text">June 2020 – August 2020</div>   
-        <div>
-            <ul class="resume-list">
-                <li>Mentored 13 high school students 1:1 through Zoom on web development resulting in 13 non-native mobile applications completed with three main core features.</li>
-                <li>Created and facilitated 90-minute lectures on the fundamentals of the MEAN stack, TypeScript, Ionic Framework, GitHub, HTML, CSS, JavaScript, and API's to all 40+ students via Zoom that would later result in the completion of over 15 non-native applications.</li>
-                <li>Participated in 2 hack days for each cohort to ensure that developers completed their three core features.</li>                    
-                <li>Communicated with manager daily on student development progress and roadblocks.</li>
-              </ul>
-        </div>  
-    </div>
-    <div class="resume-container">
-        <div>Teens Exploring Technology</div>
-        <div>Fellow • Los Angeles, CA</div>
-        <div id = "date-text">June 2018 – August 2018</div>   
-        <div>
-            <ul class="resume-list">
-                <li>Created presentation and lectured on the fundamentals of HTML, CSS, JavaScript, Bootstrap, jQuery, and Photoshop to 45 high school and middle school students.</li>
-                <li>Managed 45 students along with 4 other peers to oversee progress of each student’s website. </li>
-                <li>Guided students through the development of personal websites that addressed issues in their communities.</li>
-                <li>Provided on-going technical support, troubleshooting, and debugging services to students.</li>
-                <li>Assisted branch of the program in helping over 10 high school students at Cal Poly Pomona create websites.</li>
+	<body>
+        <!-- Nav bar -->
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./resume.html">Resume</a></li>
             </ul>
-        </div>  
-    </div>
-    <div class="resume-container">
-        <div>Teens Exploring Technology</div>
-        <div>Instructor • Los Angeles, CA</div>
-        <div id = "date-text">June 2016 – August 2016</div>   
-        <div>
-            <ul class="resume-list">
-                <li>Mentored 13 high school students 1:1 through Zoom on web development resulting in 13 non-native mobile applications completed with three main core features.</li>
-                <li>Created and facilitated 90-minute lectures on the fundamentals of the MEAN stack, TypeScript, Ionic Framework, GitHub, HTML, CSS, JavaScript, and API's to all 40+ students via Zoom that would later result in the completion of over 15 non-native applications.</li>
-                <li>Participated in 2 hack days for each cohort to ensure that developers completed their three core features.</li>                    
-                <li>Communicated with manager daily on student development progress and roadblocks</li>
-              </ul>
-        </div>  
-    </div>
-
-    <!-- Honors -->
-    <div class = "experiences-title">
-        <p>Honors</p>
-    </div>
-    <hr>
-<!-- Slide show -->
-
-<div class="slideshow-container">
-    <div class="mySlides">
-        <div class="honor-container">
-            <div class = "honor-name">Recipient of Kayne Scholarship</div>
-            <div class = "honor-info-text">Selected as one of fifty first-generation college students for being interested in the field of STEM</div>
-            <img class = "image-slide-one" src="./images/ScholarMatch.png">
         </div>
-    </div>
-    
-    <div class="mySlides">
-        <div class="honor-container">
-            <div class = "honor-name">Certification of Recognition by the City of Los Angeles</div>
-            <div class = "honor-info-text">Given certificate by the City of Los Angeles and 9th district for teaching and leading a coding program of 45 high school students in South Los Angeles to be the next generation of technology entrepreneurs.</div>   
-            <img class = "image-slide-two" src="./images/Seal_of_Los_Angeles.png">
-        </div>
-    </div>
-    
-    <div class="mySlides">
-      <div class="honor-container">
-        <div class = "honor-name" >Dean’s Honor</div>
-        <div class = "honor-info-text">Fall 2020</div>  
-        <img class = "image-slide-three" src="./images/UCSC-Logo.png"> 
-    </div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-</div>
-
-<div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<!-- Relevant Course Work -->
-    <div class = "experiences-title">
-        <p>Relevant Coursework</p>
-    </div>
-    <hr>
-    <div class="relevant-coursework-container">
-        <p class = "relevant-coursework">Artificial Intelligence and Music</p>
-        <p class = "relevant-coursework">Foundations of Interactive Game Design</p>
-        <p class = "relevant-coursework">Applied Discrete Mathematics</p>
-        <p class = "relevant-coursework">Introduction to Data Structures</p> 
-        <p class = "relevant-coursework">Introduction to Programming in Python</p> 
-    </div>
-</div>
-
-<!-- Skills -->
-<div class = "skills-background">
-
-    <div class = "skills-box">
-
-        <div class = "experiences-title">
-            <p>Skills</p>
-        </div>
-        <hr>
-        <div class="skills-container">
-            <div class="skills-item">HTML5</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
+        <div class="menu-bg" id="menu-bg"></div>
+        <!-- Resume top half -->
+        <div class="top-half">
+            <!-- Left side -->
+            <div>
+                <div class="left-container">
+                    <!-- Image -->
+                    <div class="left-items">
+                        <img class = "image-container" src="./images/aboutMe.jpeg">
+                    </div>
+                    <div class = "Education-block">
+                        <p class = "contact-section">Contact</p>
+                    </div>
+                    <!-- Contact  -->
+                    <div class="logo-container">
+                        <!-- Phone number left-->
+                        <div class="logo-item-left">
+                            <p class = "phone-email-title">Phone</p>
+                            <p class = "phone-email-name">(323) 246 - 1075</p>
+                        </div>
+                        <!-- Phone logo right -->
+                        <div class="logo-item">
+                            <div> 
+                                <svg class = "circle-logo" class ="phone" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-telephone" viewBox="-5 -4 26 26">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Email Left -->
+                        <div class="logo-item-left">
+                            <p class = "phone-email-title">Email</p>
+                            <p class = "phone-email-name">DominguezE.Jonathan@gmail.com</p>
+                        </div>  
+                        <!-- Email logo right -->
+                        <div class="logo-item">
+                            <div> 
+                                <svg class = "circle-logo" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-mailbox" viewBox="-4 -3 25 25">
+                                    <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+                                    <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div class="left-items">
+                        <div class = "Education-block">
+                            <p id = "text-ed">Education</p>
+                        </div>
+                        <p class = "title-degree">Bachelors Of Science</p>
+                        <p class = "degree-name">Cognitive Science: Emphasis in Artificial Intelligence </p>
+                        <p class = "school-name">University of California, Santa Cruz | 2022</p>
+                    </div>  
+                    <!-- Awards -->
+                    <div class="left-items">
+                        <div class = "Education-block">
+                            <p id = "text-ed">Awards</p>
+                        </div>
+                        <p class = "title-degree">Certification of Recognition</p>
+                        <p class = "school-name">City of Los Angeles</p>
+                        <p class = "title-degree">Recipient of Kayne Scholarship</p>
+                        <p class = "school-name">Scholarship</p>
+                    </div>
+                    <div class="left-items">
+                        <div class = "Education-block">
+                            <p id = "text-ed">Relevant Coursework</p>
+                        </div>
+                        <p class = "school-name">Artificial Intelligence and Music</p>
+                        <p class = "school-name">Foundations of Interactive Game Design</p>
+                        <p class = "school-name">Applied Discrete Mathematics</p>
+                        <p class = "school-name">Introduction to Data Structures</p>
+                        <p class = "school-name">Introduction to Programming in Python</p>
+                    </div>
+                </div>
             </div>
-            <div class="skills-item">CSS</div>  
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-            </div>
-            <div class="skills-item">JavaScript</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-            </div>  
-            <div class="skills-item">Python</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-            </div>
-            <div class="skills-item">GitHub</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-            </div>
-            <div class="skills-item">Node.js</div>  
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-            </div>
-            <div class="skills-item">Express.js</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-            </div>  
-            <div class="skills-item">Java</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-            </div>
-            <div class="skills-item">Mongo.db</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-            </div>  
-            <div class="skills-item">Angular</div>
-            <div class="skills-item-right">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
-                <span class="fa fa-star white"></span>
+            <!-- Right side -->
+            <div>
+                <div class="right-container">
+                    <div class = "top-right-side">
+                        <p id = "my-name">Jonathan Dominguez</p>
+                        <div>
+                            <p class = "block-text" >Machine Learning · Full Stack Developer· Junior Software Engineer  </p>
+                        </div>
+                    </div>
+                    <div class = "top-right-side">
+                        <div class = "Experience-box">
+                            <p class = "section-title">Profile</p>
+                            <div class="line"></div>
+                            <p id = "profile-text">Junior Software Engineer and Web Developer from South Central Los Angeles attending UC Santa Cruz, majoring in Cognitive Science with an emphasis in Artificial Intelligence and Human Interaction. Experience and familiarity with Front-end development. Extensive comfortable experience with Startup environments, such as beginning in early development of the application, team dynamics, and funding from venture capitalists.</p>
+                        </div>
+                    </div>
+                    <div class = "top-right-side">
+                        <div class = "Experience-box">
+                            <p class = "section-title">Professional Experience</p>
+                            <div class="line"></div>
+                        </div>
+                        <!-- <p class = "section-title">Professional Experience</p>
+                        <div class="line"></div> -->
+                        <div class="jobs-container">
+                            <div class="jobs-item">
+                                <p class = "company-name">Teens Exploring Technology</p>
+                                <p class = "time-working">June 2020 – August 2020</p>
+                                <p class = "position">Tech Lead • Los Angeles, CA</p>
+                            </div>
+                            <div class="jobs-item">
+                                <ul class="bullet-points">
+                                    <li>Mentored 13 high school students 1:1 through Zoom on web development resulting in 13 non-native mobile applications completed with three main core features.</li>
+                                    <li>Created and facilitated 90-minute lectures on the fundamentals of the MEAN stack, TypeScript, Ionic Framework, GitHub, HTML, CSS, JavaScript, and API's to all 40+ students via Zoom that would later result in the completion of over 15 non-native applications.</li>
+                                    <li>Participated in 2 hack days for each cohort to ensure that developers completed their three core features.</li>
+                                    <li>Communicated with manager daily on student development progress and roadblocks.</li>
+                                </ul>               
+                            </div>
+                            <div class="jobs-item">
+                                <p class = "company-name">Teens Exploring Technology</p>
+                                <p class = "time-working">June 2018 – August 2018</p>
+                                <p class = "position">Fellow • Los Angeles, CA</p>
+                            </div>
+                            <div class="jobs-item">
+                                <ul class="bullet-points">
+                                    <li>Created presentation and lectured on the fundamentals of HTML, CSS, JavaScript, Bootstrap, jQuery, and Photoshop to 45 high school and middle school students.</li>
+                                    <li>Managed 45 students along with 4 other peers to oversee progress of each student’s website.</li>
+                                    <li>Guided students through the development of personal websites that addressed issues in their communities.</li>
+                                    <li>Provided on-going technical support, troubleshooting, and debugging services to students.</li>
+                                    <li>Assisted branch of the program in helping over 10 high school students at Cal Poly Pomona create websites.</li>
+                                </ul>               
+                            </div>
+                            <div class="jobs-item">
+                                <p class = "company-name">Teens Exploring Technology</p>
+                                <p class = "time-working">June 2016 – August 2016</p>
+                                <p class = "position">Instructor • Los Angeles, CA</p>
+                            </div>
+                            <div class="jobs-item">
+                                <ul class="bullet-points">
+                                    <li>Mentored 13 high school students 1:1 through Zoom on web development resulting in 13 non-native mobile applications completed with three main core features.</li>
+                                    <li>Created and facilitated 90-minute lectures on the fundamentals of the MEAN stack, TypeScript, Ionic Framework, GitHub, HTML, CSS, JavaScript, and API's to all 40+ students via Zoom that would later result in the completion of over 15 non-native applications.</li>
+                                    <li>Participated in 2 hack days for each cohort to ensure that developers completed their three core features.</li>
+                                    <li>Communicated with manager daily on student development progress and roadblocks.</li>
+                                </ul>               
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- Back up space -->
+                    <!-- <div class = "top-right-side">4</div> -->
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- Certificates -->
-<!-- <div class = "certificates-container">
-    <div class = "certificates-container-title">
-        <p id = "certificates-title">Certificates</p>
-        <hr>
-    </div>
-</div> -->
-
-<!-- Foooter -->
-<footer class = "foot-box">
-    <div class="footer-container">
-        <!-- Lft side -->
-        <div class="empty">
+        <div class="bottom-container">
+            <div>
+                <div class = "skills-background">
+                    <div class = "skills-box">
+                        <div class = "experiences-title">
+                            <p class = "skills-title">Skills</p>
+                        </div>
+                        <div class="line-skills"></div>
+                        <div class="skills-container">
+                            <div class="skills-item">HTML5</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">CSS</div>  
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">JavaScript</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>  
+                            <div class="skills-item">Python</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">GitHub</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">Node.js</div>  
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">Express.js</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>  
+                            <div class="skills-item">Java</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                            <div class="skills-item">Mongo.db</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>  
+                            <div class="skills-item">Angular</div>
+                            <div class="skills-item-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                                <span class="fa fa-star white"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- center -->
-        <div class="center-footer">
-          <a href="https://github.com/JonathanDominguez" target="_blank">
-            <button class="logo-button" style="font-size:48px; color:black;background-color: white;"> <i class="fa fa-github"></i></button>
-          </a>
-          <a href="https://www.linkedin.com/in/jonathandom/" target="_blank">
-            <button class="logo-button" style="font-size:48px; color:black;background-color: white;"> <i class="fa fa-linkedin-square"></i></button>
-          </a>
-          <a href="https://www.instagram.com/___jyd___/?hl=en" target="_blank">
-            <button class="logo-button" style="font-size:48px; color:black;background-color: white;"> <i class="fa fa-instagram"></i></button>
-          </a>
-        </div>
-        <!-- Right side -->
-        <div class="item3">
-        </div>  
-    </div>  
-  </footer>
-  
-<script src="./scripts/resume.js"></script>
-</body>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                <!-- Instagram -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jonathandom/" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a> -->
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jonathandom/" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/JonathanDominguez" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+                </section>
+                <!-- Section: Social media -->
+                
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p>Jonathan Dominguez V.2.0</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Scripts -->
+		<script src="./scripts/resume.js"></script>
+	</body>
 </html>
