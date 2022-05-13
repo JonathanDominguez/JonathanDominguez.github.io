@@ -264,6 +264,12 @@ hr.new1 {
     /* background-color: red; */
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .portfolio-container-box{
         margin-top: 50px;

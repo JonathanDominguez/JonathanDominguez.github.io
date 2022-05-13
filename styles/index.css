@@ -1,56 +1,74 @@
-/* background image info */
-body {
-    background-image: url('../images/body_image.png');    
-    background-position: center center;
-    background-repeat: no-repeat;    
-    background-attachment: fixed;
-    background-size: cover;
+body{
+    font-family: 'Koulen', cursive;
 }
-.top-nav {
+/* Navbar */
+#menu-bar {
     overflow: hidden;
-    color: #fff;
+    background-color: #0a192f;
 }
-.top-nav a{
-    float: left;
-    color: #fff;
+#menu-bar a {
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-    padding-right: 3rem;
-    color: inherit; 
 }
-.menu-list{
-    color: #fff;
-    text-decoration: none;
-    color: inherit; 
+#menu-bar a:hover {
+    background-color: #5DFFD6;
+    color: black;
 }
-.top-nav-right {
+#menu-bar a.active {
+    background-color: #0096FF;
+    color: white;
+}
+.nav{
     float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: inherit;
+    font-size: 20px;
 }
-.main-Box{
-    margin-top: 15rem;
-    margin-left: 4rem;
-    margin-right: 60rem;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+/* Body */
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* background-color: #2196F3; */
+    height:94.3vh;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+}
+#Right-section-div{
+    padding: 10vh 5vw 0vh;
+    
+}
+/* Left Section */
+#image-of-me{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Right Section */
+#title-name{
+    font-family: 'Koulen', cursive;
+    font-size: 4em;
 }
 #break-line-above{
-    width:50%;
+    width:100%;
     text-align:left;
     margin-left:0;
     height: 0.5rem;
-    color: #fff;
+    color: #0096FF;
     opacity: 1;
 }
-.intro-text-box{ 
-    color: #fff;
+#text-info-about{
+    font-size: 0.5em;
 }
-#name-strong{
-    color: #5DFFD6;
-}
-.about-me-text{
-    text-indent: 3rem;
-    color: #fff;
+#about-me{
+    font-size: 0.5em;
 }
