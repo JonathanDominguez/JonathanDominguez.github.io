@@ -2,15 +2,11 @@ function onClickMenu(){
 	document.getElementById("menu").classList.toggle("change");
 	document.getElementById("nav").classList.toggle("change");
 	document.getElementById("menu-bg").classList.toggle("change-bg");
+
+    var x = document.getElementById('nav');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
 }
-
-// const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-
-let height = screen.height+150;
-function moveDown(){
-    window.scroll({
-        top: height,
-        behavior: 'smooth'
-    });
-}
-
